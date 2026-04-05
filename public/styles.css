@@ -1,0 +1,387 @@
+/* Overall section */
+.section-title {
+    font-family: 'Segoe UI', sans-serif;
+    color: #0d6efd; /* Bootstrap primary blue */
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Card styling */
+.cert-card {
+    width: 100%;
+    max-width: 36rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2); /* subtle blue shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background: #f0f7ff; /* light blue background */
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    .cert-card {
+        max-width: 30rem;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .cert-card {
+        max-width: 22rem;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.cert-card .cert-iframe {
+    height: 160px;
+    width: 100%;
+    border: none;
+}
+
+.cert-card .card-body {
+    flex: 1;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.cert-card .card-text {
+    margin-bottom: 0.5rem;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.service-card {
+    width: 26rem;
+    max-width: 100%;
+    margin: 0.75rem auto;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background: #f8fbff;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.service-card .card-body {
+    padding: 1rem;
+}
+
+.service-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 240px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .service-img {
+        max-height: 220px;
+    }
+}
+
+/* iframe inside card */
+.cert-iframe {
+    width: 100%;
+    height: 150px;
+    border: none;
+}
+
+/* Card text */
+.cert-card .card-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+.cert-card .card-title {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.cert-card .card-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    .cert-card {
+        width: 90%;
+    }
+}
+
+/* Homepage card styling */
+.home-card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2); /* subtle blue shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background: #f0f7ff; /* light blue background */
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+/* Test Score Card styling */
+.score-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+  background: #f0f7ff;
+  width: 100%;
+  max-width: 600px;   /* keep same larger size */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.score-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.score-title {
+  color: #0d6efd;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.score-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.score-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+
+/* Navbar styling - Make the navbar look more appealing */
+.site-navbar {
+  background: linear-gradient(90deg, #4a6ed4, #8db9ff);
+  padding: 12px 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.site-navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.95);
+}
+
+.site-navbar .navbar-brand:hover {
+  color: #eaf2ff;
+}
+
+.site-navbar .navbar-toggler {
+  border-color: rgba(255,255,255,0.55);
+}
+
+.site-navbar .navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.site-navbar .navbar-nav .nav-link {
+  margin-left: 18px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  transition: background 0.2s, color 0.2s;
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.site-navbar .navbar-nav .nav-link:hover,
+.site-navbar .navbar-nav .nav-link:focus {
+  color: #ffffff;
+  background: rgba(255,255,255,0.2);
+}
+
+.site-navbar .navbar-nav .nav-link.active,
+.site-navbar .navbar-nav .nav-link[aria-current="page"] {
+  color: #ffffff;
+  background: rgba(255,255,255,0.3);
+}
+
+/* Project Card styling */
+.project-card {
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background: #f0f7ff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card .card-body {
+    flex: 1;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .card-title {
+    color: #0d6efd;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.project-card .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.project-card .tag {
+    display: inline-block;
+    background: #e7f1ff;
+    color: #0d6efd;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Large Project Card with multiple images */
+.project-card-large {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background: #f0f7ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+}
+
+.project-card-large .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-large .card-title {
+    color: #0d6efd;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card-large .card-text {
+    color: #495057;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-card-large .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card-large .image-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.project-card-large .image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.project-card-large .image-label {
+    font-weight: 600;
+    color: #0d6efd;
+    font-size: 0.95rem;
+}
+
+.project-card-large .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

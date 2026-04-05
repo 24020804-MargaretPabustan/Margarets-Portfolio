@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="/styles.css">
+  <title>Margaret's Portfolio - Projects</title>
+  <style>
+    .cert-iframe {
+      width: 100%;
+      height: 600px; /* adjust as needed */
+      border: none;
+      overflow: hidden;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
+    .cert-iframe::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, Opera */
+    }
+    .images-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .image-item img {
+      width: 100%;
+      max-height: 340px;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid #dee2e6;
+      background: #fff;
+      cursor: pointer;
+    }
+    .image-view-button {
+      margin-top: 0.75rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg site-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/projects">Projects</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/certs">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="/achievements">Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="/leadership">Leadership</a></li>
+            <li class="nav-item"><a class="nav-link" href="/community">Community Service</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container my-5">
+        <div class="text-center">
+        <h2 class="section-title mb-4">Projects</h2>
+      </div>
+      <div class="row g-4 justify-content-center mt-4">
+        <div class="col-12">
+          <div class="project-card-large">
+            <div class="card-body">
+              <h5 class="card-title">OOP Task Management System</h5>
+                <p class = "card-text">
+                  <strong>Tech Stack: </strong>
+                  Language: Python 3.x <br>
+                  Paradigm: Object-Oriented Programming<br>
+                  Core Concepts: Encapsulation, Object Collaboration, Class Design, Utility Methods<br>
+                  Libraries Used: datetime(For managing deadlines and reminders) and Standard Python Built-Ins<br>
+                </p>
+                <p class="card-text">
+                     The Smart OOP Study Planner is a Python console application that simulates a real-world study planner for students. 
+                      It leverages object-oriented programming (OOP) principles to organize tasks, schedule study sessions, and track progress efficiently. <br><br>
+                                      <strong>Highlights:</strong><br>
+                          Encapsulation → Private attributes with safe getters/setters.
+
+                          Object Collaboration → Updates in StudySession cascade through Task, Subject, and Student.
+
+                          Core Classes → Student, Subject, Task, StudySession, Reminder, Planner.<br>
+
+                            <strong>Key Features:</strong><br>
+                          Add subjects and tasks with deadlines.
+
+                          Mark tasks complete, detect overdue work.
+
+                          Schedule, update, and cancel study sessions.
+
+                          Generate reminders and prioritize tasks.
+
+                          Produce simple schedules for all tasks.
+                </p>
+
+              <div style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <a href="https://github.com/24020804-MargaretPabustan/Smart-Study-Planner-OOP" target="_blank" class="btn btn-primary" style="background-color: #0d6efd; border-color: #0d6efd; border-radius: 8px; padding: 0.5rem 1.5rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+
+                <h4 class="card-subtitle text-center mb-3" style="color: #0d6efd;">Task Class </h4>
+              
+              <div class="image-item" style="margin-bottom: 1.5rem;">
+                <div class="card h-100 shadow-sm border-secondary-subtle">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-3" style="color: #0d6efd;">Task Class - Task Attributes & Encapsulation</h6>
+                    <img src="/images/task class and attributes.png" alt="Task Class Attributes" style="width: 100%; height: 200px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid #dee2e6;">
+                    <p class="card-text">
+                      Shows the private attributes of the Task class (For Example: title, description, deadline, status) and demonstrates encapsulation by restricting direct access to these properties.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="images-grid">
+                <div class="image-item">
+                  <div class="card h-100 shadow-sm border-secondary-subtle">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-3" style="color: #0d6efd;">Getters & Setters Methods</h6>
+                      <img src="/images/task getter and setter.png" alt="Task Class Getters & Setters" class="img-fluid clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/task getter and setter.png" data-image-alt="Task Class Getters & Setters">
+                      <div>
+                        <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/task getter and setter.png" data-image-alt="Task Class Getters & Setters">View Full Screen</button>
+                      </div>
+                      <p class="card-text mt-3">
+                        These are methods that provide controlled access to the private Task attributes. <br>
+                        Getters allow reading of attribute values, while setters allow updating them safely with validation, ensuring data integrity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="image-item">
+                  <div class="card h-100 shadow-sm border-secondary-subtle">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-3" style="color: #0d6efd;">Task Class - Utility Methods & Output</h6>
+                      <img src="/images/task utility methods.png" alt="Task Utility Methods" class="img-fluid clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/task utility methods.png" data-image-alt="Task Utility Methods">
+                      <div>
+                        <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/task utility methods.png" data-image-alt="Task Utility Methods">View Full Screen</button>
+                      </div>
+                      <p>Includes additional functionality such as:</p>
+                      <ol>
+                        <li>markComplete(): Marks tasks as completed</li>
+                        <li>isOverdue() : Checks whether the student has missed any deadlines</li>
+                        <li>displayTask(): Displays task information in a formatted and neat way</li>
+                      </ol>
+                      <p>These methods make task management efficient for students.</p>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+
+
+
+              </div>
+                <div class="image-item">
+                  <h4 class="card-subtitle text-center mb-3" style="color: #0d6efd;">StudySession Class </h4>
+                  <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                      <div class="card h-100 shadow-sm border-secondary-subtle">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-3" style="color: #0d6efd;">Study Session Class - Utility Methods</h6>
+                          <img src="/images/suggeststudysession.png" alt="Task Utility Methods" class="img-fluid clickable-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/suggeststudysession.png" data-image-alt="Study Session Utility Methods">
+                          <div>
+                            <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/suggeststudysession.png" data-image-alt="Study Session Utility Methods">View Full Screen</button>
+                          </div>
+                          <p>Allows users to manage study sessions efficiently:</p>
+                          <ol>
+                            <li>schedule(): Confirms that a study session is booked and returns a meaningful message</li>
+                            <li>cancel(): Cancels the session and returns a cancellation message</li>
+                            <li>update(newDate, newDuration): Updates session details and returns a confirmation message with the new values</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm border-secondary-subtle">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-3" style="color: #0d6efd;">StudySession Class - Test Code</h6>
+                          <img src="/images/study session test code.png" alt="Study Session Test Code" class="img-fluid clickable-image mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code.png" data-image-alt="Study Session Test Code">
+                          <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code.png" data-image-alt="Study Session Test Code">View Full Screen</button>
+      
+              
+                          <p class="card-text mt-3"><strong>Test Code Description:</strong><br>
+                            Demonstrates how the update() method in the StudySession class is called to modify a study session's date and duration, then calls getSimpleSchedule() to regenerate the student's planner.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card h-100 shadow-sm border-secondary-subtle">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-3" style="color: #0d6efd;">StudySession Class - Test Code Output</h6>
+                          <img src="/images/study session test code output.png" alt="Study Session Test Code Output" class="img-fluid clickable-image mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code output.png" data-image-alt="Study Session Test Code Output">
+                          <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code output.png" data-image-alt="Study Session Test Code Output">View Full Screen</button>
+                          <p class="card-text mt-3"><strong>Test Code Output Description:</strong><br>
+                            Displays the confirmation message from the update() method and the updated schedule list.<br><br>
+                            Confirms that changes in study session are propagated correctly into student's planner, reflecting encapsulation and object collaboration.<br><br>
+                            Object Collaboration: StudySession update is tied to a Task, which belongs to a Subject and the Student aggregates all subjects and tasks.
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-4 justify-content-center mt-4">
+                    <div class="col-12">
+                          <div class="project-card-large">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Learning Outcomes: </h5>
+                                <p class="text-center">
+                          
+                                Designed and implemented a modular OOP system in Python.<br>
+
+                                Applied encapsulation and collaboration across multiple classes.<br>
+
+                                Built a functional console application simulating real-world academic planning.<br>
+                                  </p>
+                          </div>
+                </div>
+              </div>
+ 
+
+
+
+              
+              <div class="project-tags" style="margin-top: 1.5rem;">
+                <span class="tag">Python 3.x</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Encapsulation</span>
+                <span class="tag">Class Design</span>
+                <span class="tag">Object Collaboration</span>
+              </div>
+
+             
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-header border-0">
+              <h5 class="modal-title text-white" id="imageModalLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img id="fullscreenImage" src="" alt="" class="img-fluid rounded shadow-sm" style="max-height: 90vh; width: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var fullscreenImage = document.getElementById('fullscreenImage');
+          var imageModalLabel = document.getElementById('imageModalLabel');
+
+          var imageTriggers = document.querySelectorAll('.clickable-image, .image-view-button');
+          imageTriggers.forEach(function (trigger) {
+            trigger.addEventListener('click', function () {
+              var src = trigger.getAttribute('data-image-src');
+              var alt = trigger.getAttribute('data-image-alt');
+              if (src) {
+                fullscreenImage.src = src;
+                fullscreenImage.alt = alt || '';
+                imageModalLabel.textContent = alt || '';
+              }
+            });
+          });
+        });
+      </script>
+  </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,5 +1,8 @@
 # Portfolio Overview
 This repository contains all my projects, certifications, achievements, community service and leadership initiatives all showcased on my portfolio website.
+It's a companion to my portfolio website: (website link here)
+
+Tech Stack: Node.JS, HTML, CSS, EJS, Bootstrap
 
 
 # Projects
@@ -37,3 +40,7 @@ This repository contains all my projects, certifications, achievements, communit
 
 
 # Leadership
+
+# Contact
+- Email: simone.pabustan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/simone-margaret-jimenez-pabustan-227a20362

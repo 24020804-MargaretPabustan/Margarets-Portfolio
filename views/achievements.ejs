@@ -3,23 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="/styles.css">
-  <title>Margaret's Portfolio</title>
-  <style>
+
+  <title>Margaret's Portfolio - Achievements</title>
+    <style>
+    /* Page background */
+    body { 
+      background-color: #f8f9fa; 
+    }
+
+    /* Section titles (e.g., "My Achievements") */
+    .section-title { 
+      color: #0d6efd; 
+      font-weight: 600; 
+    }
+
+    /* Achievement / certificate cards */
+    .achievement-card {
+      background-color: #e7f1ff; /* light blue background */
+      border-radius: 12px;
+      border: none;
+      padding: 1.5rem;
+      width: 100%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Card title in blue */
+    .achievement-card h5.card-title {
+      color: #0d6efd;
+      font-weight: 600;
+    }
+
+    /* Card body text */
+    .achievement-card p,
+    .achievement-card ul li,
+    .achievement-card strong {
+      color: #000; /* readable black */
+    }
+
+    /* Buttons (View Full Screen / PDF) */
+    .btn-blue {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn-blue:hover {
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+      transform: scale(1.03);
+    }
+
+    /* Embedded PDF / iframe */
     .cert-iframe {
       width: 100%;
-      height: 600px;
+      height: 400px; /* taller for better view */
       border: none;
       overflow: hidden;
+      border-radius: 8px;
       -ms-overflow-style: none;  
       scrollbar-width: none;     
+      margin-bottom: 1rem;
     }
-    .cert-iframe::-webkit-scrollbar {
-      display: none;  
+    .cert-iframe::-webkit-scrollbar { display: none; }
+
+    /* Test score cards */
+    .score-card {
+      background-color: #e7f1ff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
     }
-  </style>
+    .score-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .score-card h5.score-title {
+      color: #0d6efd; /* blue like section title */
+      font-weight: 600;
+    }
+    .score-card p,
+    .score-card ul li,
+    .score-card strong {
+      color: #000;
+    }
+    .score-image { 
+      width: 100%; 
+      max-width: 300px; 
+      margin-top: 0.5rem; 
+      border-radius: 8px; 
+    }
+</style>
+ 
 </head>
 <body>
 <nav class="navbar navbar-expand-lg site-navbar">
@@ -36,9 +128,6 @@
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="/achievements">Achievements</a></li>
         <li class="nav-item"><a class="nav-link" href="/leadership">Leadership</a></li>
         <li class="nav-item"><a class="nav-link" href="/community">Community Service</a></li>
-        
-        
-
       </ul>
     </div>
   </div>
@@ -50,12 +139,11 @@
   </div>
 
   <div class="row g-4 justify-content-center">
-
     <!-- Director's Roll of Honor -->
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
-      <div class="cert-card shadow-sm rounded p-4" style="width:100%;">
+    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+      <div class="achievement-card shadow-sm p-4 h-100">
         <iframe src="/achievements/droh.pdf" class="cert-iframe mb-3"></iframe>
-        <div class="card-body">
+        <div class="card-body p-0">
           <h5 class="card-title">Director's Roll of Honor</h5>
           <strong>Description:</strong>
           <p class="card-text">Inducted into Director's Roll of Honor in AY2025 Semester 1 for outstanding academic performance.</p>
@@ -74,10 +162,10 @@
     </div>
 
     <!-- STJ Prompt Engineering Showdown -->
-    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
-      <div class="cert-card shadow-sm rounded p-4" style="width:100%;">
+    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+      <div class="achievement-card shadow-sm p-4 h-100">
         <iframe src="/achievements/stj.pdf" class="cert-iframe mb-3"></iframe>
-        <div class="card-body">
+        <div class="card-body p-0">
           <h5 class="card-title">STJ Prompt Engineering Showdown</h5>
           <strong>Description:</strong>
           <p class="card-text">Certificate of Participation for the Prompt Engineering Showdown, gained hands-on experience with AI prompt engineering techniques.</p>
@@ -93,43 +181,44 @@
         </div>
       </div>
     </div>
-    <div class="container my-5">
-      <div class="text-center mb-4">
-        <h2 class="section-title">My Test Scores (Academic Highlights)</h2>
-      </div>
-      
-    
- <div class="row g-4 justify-content-center">
-  <!-- C206 and C237 Score Card -->
-  <div class="col-12 col-md-6 d-flex justify-content-center">
+  </div>
+
+  <!-- Test Scores Section -->
+<div class="text-center my-5">
+  <h2 class="section-title">My Test Scores (Academic Highlights)</h2>
+</div>
+
+<div class="row g-4 justify-content-center">
+  <!-- C206 & C237 Score Card -->
+  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
     <div class="score-card">
       <h5 class="score-title">C206 & C237 – Programming & Software Development Process</h5>
       <p class="score-text">Grade: A (4.0 GPA)</p>
-      <img src="/images/C206_C237_scores.png" alt="C206 and C237 Scores" class="score-image">
+      <img src="/images/C206_C237_scores.png" alt="C206 and C237 Scores" class="score-image mb-2">
+      <a href="/images/C206_C237_scores.png" target="_blank" class="btn btn-blue">View Full Screen</a>
     </div>
   </div>
 
   <!-- C270 Score Card -->
-  <div class="col-12 col-md-6 d-flex justify-content-center">
+  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
     <div class="score-card">
       <h5 class="score-title">C270 – DevOps Fundamentals</h5>
       <p class="score-text">Grade: A (4.0 GPA)</p>
-      <img src="/images/C270_scores.png" alt="C270 Score" class="score-image">
+      <img src="/images/C270_scores.png" alt="C270 Score" class="score-image mb-2">
+      <a href="/images/C270_scores.png" target="_blank" class="btn btn-blue">View Full Screen</a>
     </div>
   </div>
 
-  <!-- C322 and C326 Score Card -->
-  <div class="col-12 col-md-6 d-flex justify-content-center">
+  <!-- C322 & C326 Score Card -->
+  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
     <div class="score-card">
       <h5 class="score-title">C322 – Cloud Data Centre & C326 – Internetworking</h5>
       <p class="score-text">Grade: Distinction</p>
-      <img src="/images/C322_C326_scores.png" alt="C322 and C326 Scores" class="score-image">
+      <img src="/images/C322_C326_scores.png" alt="C322 and C326 Scores" class="score-image mb-2">
+      <a href="/images/C322_C326_scores.png" target="_blank" class="btn btn-blue">View Full Screen</a>
     </div>
   </div>
 </div>
-
-
-
   </div>
 </div>
 </body>

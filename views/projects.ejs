@@ -176,12 +176,11 @@
                         <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/suggeststudysession.png" data-image-alt="Study Session Utility Methods">View Full Screen</button>
                       </div>
                       <strong>Description:</strong>
-                      <p>Allows users to manage study sessions efficiently:</p>
-                      <ol>
-                        <li>schedule(): Confirms that a study session is booked and returns a meaningful message</li>
-                        <li>cancel(): Cancels the session and returns a cancellation message</li>
-                        <li>update(newDate, newDuration): Updates session details and returns a confirmation message with the new values</li>
-                      </ol>
+                      <p>
+                        Automatically suggest study sessions for tasks that do not yet have one.<br><br>
+                        suggestStudySession(): Iterates through all tasks, generates a unique session ID tied to the task, links the session, and returns scheduled confirmations.
+                      </p>
+                     
                     </div>
                   </div>
                 </div>
@@ -189,11 +188,13 @@
                   <div class="card h-100 shadow-sm border-secondary-subtle">
                     <div class="card-body">
                       <h6 class="card-subtitle mb-3" style="color: #0d6efd;">StudySession Class - Test Code</h6>
-                      <img src="/images/study session test code.png" alt="Study Session Test Code" class="img-fluid clickable-image mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code.png" data-image-alt="Study Session Test Code">
-                      <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/study session test code.png" data-image-alt="Study Session Test Code">View Full Screen</button>
+                      <img src="/images/studysession_testcode.png" alt="Study Session Test Code" class="img-fluid clickable-image mb-3" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/studysession_testcode.png" data-image-alt="Study Session Test Code">
+                      <button type="button" class="btn btn-sm btn-outline-primary image-view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-src="/images/studysession_testcode.png" data-image-alt="Study Session Test Code">View Full Screen</button>
 
                       <p class="card-text mt-3"><strong>Test Code Description:</strong><br>
-                        Demonstrates how the update() method in the StudySession class is called to modify a study session's date and duration, then calls getSimpleSchedule() to regenerate the student's planner.
+                        Demonstrates how the suggestStudySession() method is called, to automatically suggest schedules for tasks without study sessions<br>
+                        Test code will display the updated student schedule after suggestions in the output, confirming that study sessions are correctly linked to tasks<br>
+                        
                       </p>
                     </div>
                   </div>
@@ -207,7 +208,6 @@
                       <p class="card-text mt-3"><strong>Test Code Output Description:</strong><br>
                         Displays the confirmation message from the update() method and the updated schedule list.<br><br>
                         Confirms that changes in study session are propagated correctly into student's planner, reflecting encapsulation and object collaboration.<br><br>
-                        Object Collaboration: StudySession update is tied to a Task, which belongs to a Subject and the Student aggregates all subjects and tasks.
                       </p>
                     </div>
                   </div>
@@ -286,13 +286,7 @@
         <p class="card-text mt-3">
           <strong> Description:</strong><br>
           Automatically suggest study sessions for tasks that do not yet have one.<br><br>
-          It creates a StudySession object for each task without a session, and returns a list of scheduled confirmations<br><br>
-        <ul>
-           <li>default_duration: The length of the session in hours (default is 2).</li> 
-            <li>start_date: Optional start date for the sessions; if not provided, today’s date is used.</li>
-            <li>Returns: List of strings confirming each session scheduled.</li><br>
-            <strong>Purpose:</strong> Helps students quickly generate study sessions for all incomplete tasks, improving task planning and time management
-        </ul>
+          It also displays the updated schedule after suggestions, confirming that the study sessions were correctly linked to tasks and reflected in student's schedule.<br><br>
           
         </p>
       </div>
@@ -338,9 +332,12 @@
                   <div class="card-body">
                     <h5 class="card-title text-center">Learning Outcomes: </h5>
                     <p class="text-center">
-                      Designed and implemented a modular OOP system in Python.<br>
-                      Applied encapsulation and collaboration across multiple classes.<br>
-                      Built a functional console application simulating real-world academic planning.<br>
+                      Designed and implemented a modular OOP system in Python.<br><br>
+                      Applied encapsulation and collaboration across multiple classes (Student, Subjects, Task, StudySession, Reminder, Planner).<br><br>
+                      Built a functional console application simulating real-world academic planning.<br><br>
+                      Implemented task prioritization based on subject priority, completion status and deadlines<br><br>
+                      Built a functional console application simulating real-world academic planning, including automatic study session suggestions<br><br>
+                      Demonstrated the ability to link objects meaningfully, e.g., associating tasks with subjects, study sessions, and reminders.<br><br>
                     </p>
                   </div>
                 </div>

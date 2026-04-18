@@ -63,7 +63,7 @@ app.get('/projects', (req, res) => {
 });
 
 //Define ports to listen to, and start the server//
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on URL address : http://localhost:${PORT}/`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Margaret's Portfolio server running on URL address : http://localhost:${PORT}/`));
 
 

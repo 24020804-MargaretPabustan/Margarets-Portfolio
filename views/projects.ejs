@@ -82,6 +82,7 @@
       <h2 class="section-title mb-4">Projects</h2>
     </div>
 
+    <!--OOP Study Planner System-->
     <div class="row g-4 justify-content-center mt-4">
       <div class="col-12">
         <div class="project-card-large">
@@ -361,6 +362,485 @@
                       Implemented task prioritization based on subject priority, completion status, and deadlines.<br><br>
                       Included automatic study session suggestions linked to tasks.<br><br>
                       Demonstrated meaningful object collaboration and method usage in a student-focused planning system.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Node.JS Library Management System -->
+    <div class="row g-4 justify-content-center mt-4">
+      <div class="col-12">
+        <div class="project-card-large">
+          <div class="card-body">
+            <h5 class="card-title">Node.JS Library Management System</h5>
+
+            <p class="card-text">
+             This project is a full-stack web application developed as part of a group assignment using Node.js, Express, EJS, and MySQL.<br>
+              The system supports core functionalities such as user authentication, role-based access control (RBAC), and management of entities including publishers, books, and users.<br><br>
+
+              I was responsible for designing and implementing the Publisher Management module, which includes full CRUD (Create, Read, Update, Delete) operations with database integration and server-side rendering using EJS.<br>
+              The module also includes a search functionality that allows users to filter publishers by name, address, or country using keyword-based queries.<br><br>
+              I collaborated with teammate to integrate the existing role-based access control system into the Publisher module by applying middleware and session-based role checks to restrict create, update, and delete actions to admin users.
+            </p>
+
+            
+             <strong>Key Features:</strong>
+                <ul>
+                  <li>Full CRUD functionality for publisher management (create, view, update, delete).</li>
+                  <li>Database integration using MySQL for persistent publisher data storage.</li>
+                  <li>Server-side rendering using EJS for dynamic page rendering.</li>
+                  <li>Collaboration with teammate to integrate existing RBAC into the Publisher module.</li>
+                  <li>Admin-only access enforcement for create, update, and delete operations using middleware checks.</li>
+                  <li>Conditional UI rendering in EJS based on user role.</li>
+                  <li>Search functionality for filtering publishers by name, address, and country using keyword-based queries.</li>
+                </ul>
+
+            <p class="card-text">
+              <strong>Tech Stack: </strong><br>
+              Language: JavaScript (Node.Js) <br>
+              Backend Framework: Express.js<br>
+              Template Engine: EJS (Server-Side Rendering)<br>
+              Database: MySQL<br>
+              Hosting/Deployment: Filess.io (Database Hosting) and Render (Web App Hosting)<br>
+            </p>
+
+            <div class="text-center my-3">
+              <a href="https://github.com/MargaretPabustan/Library-Management-System" target="_blank" class="btn btn-primary" style="background-color:#0d6efd; border-color:#0d6efd; border-radius:8px; font-weight:600;">
+                View on GitHub
+              </a>
+            </div>
+
+            <!-- PUBLISHER MANAGEMENT MODULE -->
+            <h4 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Publisher Management Module</h4>
+            
+            <!-- Create Publisher -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Create Publisher</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_add.png" alt="Publisher Add Form" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_add.png"
+                        data-image-alt="Publisher Add Form">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_add.png"
+                            data-image-alt="Publisher Add Form">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                       Publisher Add Form <br>
+                       A form interface that allows users to input publisher details and submit them to the system for storage in the database.<br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_add2.png" alt="Publisher Add Success" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_add2.png"
+                        data-image-alt="Publisher Add Success">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_add2.png"
+                            data-image-alt="Publisher Add Success">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                       Displays the details of a newly created publisher after successful submission.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View Publisher -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">View Publishers</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_read.png" alt="Publisher List" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_read.png"
+                        data-image-alt="Publisher List">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_read.png"
+                            data-image-alt="Publisher List">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                       Publisher List<br>
+                        Displays all publishers in an organised table format retrieved from the database.<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_read2.png" alt="Publisher Details" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_read2.png"
+                        data-image-alt="Publisher Details">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_read2.png"
+                            data-image-alt="Publisher Details">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                       Publisher Details<br>
+                       Provides a detailed view of a single publsher's information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Update Publisher -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Update Publisher</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_update.png" alt="Publisher Update Form" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_update.png"
+                        data-image-alt="Publisher Update Form">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_update.png"
+                            data-image-alt="Publisher Update Form">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Update existing publisher information with form pre-population.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_update2.png" alt="Publisher Update Success" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_update2.png"
+                        data-image-alt="Publisher Update Success">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_update2.png"
+                            data-image-alt="Publisher Update Success">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Success message after updating a publisher.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delete Publisher -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Delete Publisher</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_delete.png" alt="Publisher Delete Confirmation" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_delete.png"
+                        data-image-alt="Publisher Delete Confirmation">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_delete.png"
+                            data-image-alt="Publisher Delete Confirmation">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Delete confirmation dialog before removing a publisher.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_delete2.png" alt="Publisher Delete Success" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_delete2.png"
+                        data-image-alt="Publisher Delete Success">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_delete2.png"
+                            data-image-alt="Publisher Delete Success">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Success message after deleting a publisher.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search Publisher -->
+            <div class="text-center mt-4 mb-3">
+              <span class="badge rounded-pill bg-primary fs-5 px-4 py-2 shadow-sm" style="background-color: #0d6efd !important; cursor: default;" title="Special Features">
+                Special Features
+              </span>
+            </div>
+            <h4 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Search Publisher</h5>
+            
+            <!-- Search by Name -->
+            <h6 class="card-subtitle text-center mt-3 mb-3" style="color: #0d6efd;">Search by Name</h6>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_name1.png" alt="Publisher Search Name 1" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_name1.png"
+                        data-image-alt="Publisher Search Name 1">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_name1.png"
+                            data-image-alt="Publisher Search Name 1">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Search input field to filter publishers by name.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_name2.png" alt="Publisher Search Name 2" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_name2.png"
+                        data-image-alt="Publisher Search Name 2">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_name2.png"
+                            data-image-alt="Publisher Search Name 2">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Filtered results showing matching publishers by name.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+
+      
+
+            <!-- Search by Address -->
+            <h6 class="card-subtitle text-center mt-3 mb-3" style="color: #0d6efd;">Search by Address</h6>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_address1.png" alt="Publisher Search Address 1" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_address1.png"
+                        data-image-alt="Publisher Search Address 1">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_address1.png"
+                            data-image-alt="Publisher Search Address 1">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Search input field to filter publishers by address.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_address2.png" alt="Publisher Search Address 2" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_address2.png"
+                        data-image-alt="Publisher Search Address 2">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_address2.png"
+                            data-image-alt="Publisher Search Address 2">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Filtered results showing matching publishers by address.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search by Country -->
+            <h6 class="card-subtitle text-center mt-3 mb-3" style="color: #0d6efd;">Search by Country</h6>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_country1.png" alt="Publisher Search Country 1" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_country1.png"
+                        data-image-alt="Publisher Search Country 1">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_country1.png"
+                            data-image-alt="Publisher Search Country 1">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Search input field to filter publishers by country.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm bg-white">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_search_country2.png" alt="Publisher Search Country 2" 
+                        class="img-fluid clickable-image mb-2"
+                        data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-image-src="/images/publisher_search_country2.png"
+                        data-image-alt="Publisher Search Country 2">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_search_country2.png"
+                            data-image-alt="Publisher Search Country 2">
+                      View Fullscreen
+                    </button>
+                    <p class="mt-2"><strong>Description:</strong><br>
+                      Filtered results showing matching publishers by country.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RBAC IMPLEMENTATION -->
+            <h4 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Role-Based Access Control</h4>
+            
+            <!-- Admin Authorization -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">Admin Authorization</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-secondary-subtle">
+                  <div class="card-body text-center">
+                    <img src="/images/rbac_admin.png" alt="RBAC Middleware"
+                         class="img-fluid mb-2 clickable-image"
+                         data-bs-toggle="modal" data-bs-target="#imageModal"
+                         data-image-src="/images/rbac_admin.png"
+                         data-image-alt="RBAC Middleware">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/rbac_admin.png"
+                            data-image-alt="RBAC Middleware">View Fullscreen</button>
+                    <p class="mt-2"><strong>Description:</strong> <br>
+                      Middleware that checks user role before allowing create, update, delete operations.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-secondary-subtle">
+                  <div class="card-body text-center">
+                    <img src="/images/rbac_admin2.png" alt="RBAC Middleware Code"
+                         class="img-fluid mb-2 clickable-image"
+                         data-bs-toggle="modal" data-bs-target="#imageModal"
+                         data-image-src="/images/rbac_admin2.png"
+                         data-image-alt="RBAC Middleware Code">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/rbac_admin2.png"
+                            data-image-alt="RBAC Middleware Code">View Fullscreen</button>
+                    <p class="mt-2"><strong>Description:</strong> <br>
+                      Implementation of role-checking middleware function.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- User Interface -->
+            <h5 class="card-subtitle text-center mt-4 mb-3" style="color: #0d6efd;">User Interface</h5>
+            <div class="row g-4 justify-content-center">
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-secondary-subtle">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_admin_ui.png" alt="Publisher Admin UI"
+                         class="img-fluid mb-2 clickable-image"
+                         data-bs-toggle="modal" data-bs-target="#imageModal"
+                         data-image-src="/images/publisher_admin_ui.png"
+                         data-image-alt="Publisher Admin UI">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_admin_ui.png"
+                            data-image-alt="Publisher Admin UI">View Fullscreen</button>
+                    <p class="mt-2"><strong>Description:</strong>
+                       Admin view with full access buttons (Add, Edit, Delete).</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm border-secondary-subtle">
+                  <div class="card-body text-center">
+                    <img src="/images/publisher_user_ui.png" alt="Publisher User UI"
+                         class="img-fluid mb-2 clickable-image"
+                         data-bs-toggle="modal" data-bs-target="#imageModal"
+                         data-image-src="/images/publisher_user_ui.png"
+                         data-image-alt="Publisher User UI">
+                    <button class="btn btn-sm btn-outline-primary image-view-button"
+                            data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-image-src="/images/publisher_user_ui.png"
+                            data-image-alt="Publisher User UI">View Fullscreen</button>
+                    <p class="mt-2"><strong>Description:</strong>
+                       Regular user view with read-only access (View only).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <!-- LEARNING OUTCOMES -->
+            <div class="row g-4 justify-content-center mt-5">
+              <div class="col-12">
+                <div class="project-card-large bg-white">
+                  <div class="card-body text-center">
+                    <h5 class="card-title" style="color:#0d6efd;">Learning Outcomes</h5>
+                    <p>
+                      Built and maintained the Publisher Management module using Node.js, Express, and MySQL.<br><br>
+                      Implemented full CRUD operations with database integration.<br><br>
+                      Developed server-side rendered pages using EJS.<br><br>
+                      Collaborated with a teammate to integrate existing role-based access control into the module.<br><br>
+                      Applied middleware and session-based role checks to enforce admin-only restrictions for sensitive operations.<br><br>
+                      Deployed the application using Render with a MySQL database hosted on Filess.io.
                     </p>
                   </div>
                 </div>

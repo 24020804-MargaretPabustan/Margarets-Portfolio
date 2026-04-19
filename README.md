@@ -68,3 +68,11 @@ Link to Github Repository: https://github.com/24020804-MargaretPabustan/Margaret
 # Contact
 - Email: simone.pabustan@gmail.com
 - LinkedIn: https://www.linkedin.com/in/simone-margaret-jimenez-pabustan-227a20362
+
+
+# How to run Margaret's Portfolio:
+- Live Demo: (Render Link)
+
+- On Localhost:
+1. Enter the command npx nodemon app.js into the terminal
+2. Click the link: http://localhost:5000/

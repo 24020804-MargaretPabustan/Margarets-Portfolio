@@ -4,29 +4,40 @@ It's a companion to my portfolio website: (website link here)
 
 Tech Stack: Node.JS, HTML, CSS, EJS, Bootstrap
 Link to Github Repository: https://github.com/24020804-MargaretPabustan/Margarets-Portfolio
-
+Link to Live Demo: (Vercel Link)
 
 # Projects
-1. Smart OOP Study Planner
+1. ## Node.JS Library Management System
+- A full-stack web application built with Node.js, Express, EJS, Bootstrap, CSSand MySQL for managing library data such as publishers, books, and users.
+- Developed the Publisher Management module with full CRUD functionality and database integration. Implemented a search feature to filter publishers by name, address, and country.
+- GitHub Repo: https://github.com/MargaretPabustan/Library-Management-System
+- Link to Live Demo: https://library-management-system-demo-link.onrender.com
+- Link to Demo Video: 
+
+Demo Login Credentials (For Testing Only)
+•	Admin Account
+Email: admin6@gmail.com
+Password: margaret
+•	User Account
+Email: user@email.com
+Password: user1234
+
+
+
+
+2. ## Final Year Project - [IP] DELL x InnovateDash Challenge
+
+
+3.  ## Smart OOP Study Planner
+-  Tech Stack: Python, OOP
 - Description: A user-friendly study planner designed using Python Object Oriented Programming to help students manage tasks, schedule study sessions and track progress efficiently
-- Tech Stack: Python, OOP
 - Github Repo: https://github.com/MargaretPabustan/Smart-Study-Planner-OOP
 
-2. Node.JS Library Management System
-- A full-stack web application built with Node.js, Express, EJS, and MySQL for managing library data such as publishers, books, and users.
 
-- Developed the Publisher Management module with full CRUD functionality and database integration. Implemented a search feature to filter publishers by name, address, and country.
-
-- Collaborated with a teammate to integrate role-based access control (RBAC), restricting create, update, and delete actions to admin users.
-- Github Repo: https://github.com/MargaretPabustan/Library-Management-System
-- Link to Live Demo(Vercel): https://library-management-system-three-tawny.vercel.app/login
-
-3. Internetworking Continual Assessment 2
+4. ## Personal Portfolio Website
+- Tech Stsck: Node.Js Express, EJS, CSS, HTML, Bootstrap
 
 
-
-
-4. Final Year Project - [IP] DELL x InnovateDash Challenge
 
 
 # Certifications
@@ -72,7 +83,7 @@ Link to Github Repository: https://github.com/24020804-MargaretPabustan/Margaret
 
 
 # How to run Margaret's Portfolio:
-- Live Demo: (Render Link)
+- Click on the Live Demo Link: (Vercel Link)
 
 - On Localhost:
 1. Enter the command npx nodemon app.js into the terminal
